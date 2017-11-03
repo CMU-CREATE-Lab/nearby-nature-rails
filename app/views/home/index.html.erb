@@ -7,17 +7,20 @@
   <div class="tabs-content" data-tabs-content="example-tabs">
     <div class="tabs-panel is-active" id="panel1">
       <!-- <form> -->
-        <label>Form Link
-          <input type="text" placeholder=".small-12.columns">
+        <label>Form URL
+          <input id="input-url" type="text" placeholder="https://goo.gl/forms/UNIQUE_ID" />
         </label>
+          <label>Hyperlink Text
+            <input id="input-link-text" type="text" placeholder="Click to input data" />
+          </label>
         <label>Graph Embed Code
-          <input type="text" class="font-embedcode" placeholder=".small-12.columns">
+          <textarea id="input-embedcode" class="font-embedcode" rows="3" placeholder="<iframe></iframe>"></textarea>
         </label>
-        <input type="submit" class="button" value="Generate Code">
+        <input id="input-generate" type="button" class="button" value="Generate Code" />
       <!-- </form> -->
       <label>
         Generated Code
-        <textarea class="font-embedcode" rows="3" placeholder="<a></a>"></textarea>
+        <textarea id="textarea-output" class="font-embedcode" rows="3" placeholder="<a></a>"></textarea>
       </label>
     </div>
     <div class="tabs-panel" id="panel2">
