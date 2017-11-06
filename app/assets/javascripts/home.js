@@ -8,9 +8,11 @@ var clickGenerateCode = function() {
   var embed_code = $("#input-embedcode").val();
   var result = "<a href=\""+url+"\">"+link_text+"</a><br/>"+embed_code;
   $("#textarea-output").text(result);
+  $("#textarea-output").removeAttr("disabled");
 }
 
 
 $(document).ready(function() {
   $("#input-generate").on("click", clickGenerateCode);
+  $("#textarea-output").attr("disabled","");
 });
