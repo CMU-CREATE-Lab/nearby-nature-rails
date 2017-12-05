@@ -4,7 +4,7 @@
 
 var clickGenerateCode = function() {
   var url = $("#input-url").val();
-  var link_text = $("#input-link-text").val() == "" ? "Click to input data" : $("#input-link-text").val();
+  var link_text = "Click to input data";
   var embed_code = $("#input-embedcode").val();
   var result = "<a href=\""+url+"\">"+link_text+"</a><br/>"+embed_code;
   $("#textarea-output").text(result);
