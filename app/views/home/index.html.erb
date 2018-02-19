@@ -1,8 +1,9 @@
 
 <div class="section">
   <ul class="tabs" data-tabs id="example-tabs">
-    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Nearby Nature</a></li>
-    <!-- <li class="tabs-title"><a href="#panel2" aria-selected="true">P2</a></li> -->
+    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Form &amp; Chart</a></li>
+    <li class="tabs-title"><a href="#panel2" aria-selected="true">Image</a></li>
+    <li class="tabs-title"><a href="#panel3" aria-selected="true">Tabs</a></li>
   </ul>
   <div class="tabs-content" data-tabs-content="example-tabs">
     <!-- TAB: Nearby Nature -->
@@ -68,9 +69,43 @@
       <p>After clicking Publish, the embed code will appear in a text box. Copy this to your clipboard. <b>This is the embed code that you will put in the "Graph Embed Code" field above</b>.</p>
       <div class="callout" style="margin:10px"><a target="_blank" href="<%= asset_path "img1-9.png" %>"><img src="<%= asset_path "img1-9.png" %>" /></a></div>
     </div>
-    <!-- TAB: P2 -->
-    <!-- <div class="tabs-panel" id="panel2">
-        Something else
-    </div> -->
+    <!-- TAB: Image -->
+    <div class="tabs-panel" id="panel2">
+      <!-- Image -->
+      <h3>Embed</h3>
+      <!-- <form> -->
+        <label>Image URL
+          <input type="text" placeholder="https://example.com/image.jpg" />
+        </label>
+        <input id="input-generate2" type="button" class="button" value="Generate Code" />
+      <!-- </form> -->
+      <label>
+        Generated Code
+        <textarea class="font-embedcode" rows="3" placeholder="<a></a>"></textarea>
+      </label>
+    </div>
+    <!-- TAB: Tabs -->
+    <div class="tabs-panel" id="panel3">
+      <!-- Tabs -->
+      <h3>Embed</h3>
+      <!-- <form> -->
+        <div style="border:1px solid #e6e6e6;padding: 15px;">
+          <label>Tab Title
+            <input type="text" placeholder="Title" />
+          </label>
+          <label>Tab Content
+            <input type="text" placeholder="HTML code goes here" />
+          </label>
+          <input type="button" class="button alert" value="Delete" />
+          <input type="button" class="button success" value="Add" />
+        </div>
+      <!-- </form> -->
+      <br/>
+      <input id="input-generate3" type="button" class="button" value="Generate Code" />
+      <label>
+        Generated Code
+        <textarea class="font-embedcode" rows="3" placeholder="<a></a>"></textarea>
+      </label>
+    </div>
   </div>
 </div>
