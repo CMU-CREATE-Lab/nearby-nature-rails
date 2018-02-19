@@ -75,13 +75,13 @@
       <h3>Embed</h3>
       <!-- <form> -->
         <label>Image URL
-          <input type="text" placeholder="https://example.com/image.jpg" />
+          <input id="input2-imgurl" type="text" placeholder="https://example.com/image.jpg" />
         </label>
-        <input id="input-generate2" type="button" class="button" value="Generate Code" />
+        <input id="input2-generate" type="button" class="button" value="Generate Code" />
       <!-- </form> -->
       <label>
         Generated Code
-        <textarea class="font-embedcode" rows="3" placeholder="<a></a>"></textarea>
+        <textarea id="textarea2-output" class="font-embedcode" rows="3" placeholder="<a></a>"></textarea>
       </label>
     </div>
     <!-- TAB: Tabs -->
@@ -89,22 +89,26 @@
       <!-- Tabs -->
       <h3>Embed</h3>
       <!-- <form> -->
-        <div style="border:1px solid #e6e6e6;padding: 15px;">
+        <div id="input3-tabs">
+        <!-- <div id="input3-tab1" style="border:1px solid #e6e6e6;padding: 15px;">
           <label>Tab Title
-            <input type="text" placeholder="Title" />
+            <input id="input3-title" type="text" placeholder="Title" />
           </label>
           <label>Tab Content
-            <input type="text" placeholder="HTML code goes here" />
+            <textarea id="input3-content" class="font-embedcode" rows="3" placeholder="HTML code goes here"></textarea>
           </label>
-          <input type="button" class="button alert" value="Delete" />
-          <input type="button" class="button success" value="Add" />
+        </div> -->
         </div>
       <!-- </form> -->
       <br/>
-      <input id="input-generate3" type="button" class="button" value="Generate Code" />
+      <input id="input3-delete" type="button" class="button alert" value="Delete" />
+      <input id="input3-add" type="button" class="button success" value="Add" />
+      <br/>
+      <hr/>
+      <input id="input3-generate" type="button" class="button" value="Generate Code" />
       <label>
         Generated Code
-        <textarea class="font-embedcode" rows="3" placeholder="<a></a>"></textarea>
+        <textarea id="textarea3-output" class="font-embedcode" rows="3" placeholder="<a></a>"></textarea>
       </label>
     </div>
   </div>
