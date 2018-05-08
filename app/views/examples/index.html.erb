@@ -1,12 +1,16 @@
+<% content_for :tabs do %>
+  <a href="/"><li class="tabs-title"><div class="callout" style="max-width:100px;margin:10px"><img src="<%= asset_path "logo.jpg" %>" /></div></li></a>
+<% end %>
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Examples</h1>
+<h1>Examples</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Link</th>
+      <th width="80%">Title</th>
+      <!-- <th>Link</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,8 +18,10 @@
   <tbody>
     <% @examples.each do |example| %>
       <tr>
-        <td><%= example.title %></td>
-        <td><%= example.link %></td>
+        <!-- <td><%= example.title %></td> -->
+        <!-- <td><%= example.link %></td> -->
+        <!-- <td><a href="<%= example.link %>" target="_blank"><%= example.title %></a></td> -->
+        <td><%= link_to example.title, example.link, :target => "_blank" %></td>
         <td><%= link_to 'Show', example %></td>
         <td><%= link_to 'Edit', edit_example_path(example) %></td>
         <td><%= link_to 'Destroy', example, method: :delete, data: { confirm: 'Are you sure?' } %></td>

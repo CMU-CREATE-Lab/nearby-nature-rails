@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title>Nearby Nature</title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application" %>
@@ -13,7 +13,17 @@
 
   <body>
 
-    <%= yield %>
+
+    <div class="section">
+      <ul class="tabs" data-tabs id="example-tabs">
+        <%= yield :tabs %>
+      </ul>
+      <div class="tabs-content" data-tabs-content="example-tabs">
+
+        <%= yield %>
+
+      </div>
+    </div>
 
   </body>
 </html>
